@@ -66,6 +66,19 @@ module.exports = function(grunt) {
         }
       }
     },
+    imagemin: {
+      dist: {
+        options: {
+          
+        },
+        files: [{
+          expand:true,
+          cwd: '_assets/images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'dist/img/'
+        }]
+      }
+    },
     watch: {
       gruntfile: {
         files: [ 'gruntfile.js' ],
@@ -83,6 +96,12 @@ module.exports = function(grunt) {
         ],
         tasks: [ "sass" ],
       },
+      imagemin: {
+        files: [
+          "_assets/images/**/*.{png,jpg,gif}",
+        ],
+        tasks: [ "imagemin" ]
+      }
     },
   });
   
@@ -93,7 +112,7 @@ module.exports = function(grunt) {
   grunt.registerTask( 'init', [ 'init' , 'build' ] );
   
   // Build Task
-  grunt.registerTask( 'build' , [ 'concat' , 'copy' , 'sass' , 'uglify' ] );
+  grunt.registerTask( 'build' , [ 'concat' , 'copy' , 'sass' , 'uglify', 'imagemin' ] );
 
   // Default task(s).
   grunt.registerTask( 'default' , ['build'] );
