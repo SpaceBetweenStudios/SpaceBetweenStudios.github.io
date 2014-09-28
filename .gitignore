@@ -1,2 +1,15 @@
-_site/
+# OS Junk Files
+.DS_Store
+Thumbs.db
+
+# Working files
+*.log
 .sass-cache/
+
+# Jekyll Ignores
+_site/
+
+# Package Managers & Modules
+node_modules/
+bower_components/
+

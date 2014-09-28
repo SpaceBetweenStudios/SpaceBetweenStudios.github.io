@@ -1,4 +1,4 @@
-SpaceBetweenStudios.github.io
+Space Between Studio's Official Website
 =============================
 
-Space Between Studio's Official Website
+by John "Seg" Seggerson

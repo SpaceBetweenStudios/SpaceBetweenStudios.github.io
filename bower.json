@@ -1,0 +1,22 @@
+{
+  "name": "SpaceBetweenStudios.github.io",
+  "version": "2.0.0",
+  "homepage": "http://www.spacebetweenstudios.com",
+  "authors": [
+    "John *Seg* Seggerson <seg@spacebetweenstudios.com>"
+  ],
+  "description": "Space Between Studios' Offical Website",
+  "main": "index.html",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
