@@ -8,6 +8,10 @@ body {
     padding:0;
 }
 
+a {
+    color:#fff;
+}
+
 .container-full {
     position:relative;
     margin:0;
@@ -30,7 +34,18 @@ body {
             line-height:40pt;
         }
         .main-tagline {
+            font-size:14pt;
             padding-top:20px;
+            padding-bottom:20px;
+        }
+        .main-contact {
+            font-size:26pt;
+            li {
+                display: inline;
+                list-style-type: none;
+                padding-left:10px;
+                padding-right:10px;
+            }
         }
     }
     .footer {
