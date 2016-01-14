@@ -1,7 +1,7 @@
 lsi: false
 markdown:  redcarpet
 permalink: pretty
-highlighter:  true
+highlighter: pygments
 timezone: America/Los_Angeles
 gems:
   - jekyll-redirect-from
