@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-  
+
     pkg: grunt.file.readJSON('package.json'),
     banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
           '<%= grunt.template.today("yyyy-mm-dd") %>\n',
@@ -69,7 +69,7 @@ module.exports = function(grunt) {
     imagemin: {
       dist: {
         options: {
-          
+
         },
         files: [{
           expand:true,
@@ -104,17 +104,17 @@ module.exports = function(grunt) {
       }
     },
   });
-  
+
   // Load the plugins for tasks.
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-  
+
   // Inital Setup Task
   grunt.registerTask( 'init', [ 'init' , 'build' ] );
-  
+
   // Build Task
-  grunt.registerTask( 'build' , [ 'concat' , 'copy' , 'sass' , 'uglify', 'imagemin' ] );
+  grunt.registerTask( 'build' , [ 'sass' , 'uglify', 'imagemin' ] );
 
   // Default task(s).
   grunt.registerTask( 'default' , ['build'] );
-  
+
 };
